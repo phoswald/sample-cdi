@@ -9,17 +9,17 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 
 @ExtendWith(WeldJunit5AutoExtension.class)
-class SampleBeanTest {
+class GreeterBeanTest {
 
     @Inject
-    private SampleBean testee;
+    private GreeterBean testee;
     
     @Inject
-    private ConfigurationBean configuration;
+    private StateBean state;
 
     @Test
     void sayHello_valid_success() {
-        configuration.setName("tester");
+        state.setName("tester");
         assertEquals("Hello, tester!", testee.sayHello());
     }
 }

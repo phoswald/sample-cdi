@@ -3,7 +3,7 @@ package com.github.phoswald.sample.cdi.test;
 import jakarta.enterprise.context.ApplicationScoped;
 
 @ApplicationScoped
-class ConfigurationBean {
+class StateBean {
     
     private String name;
 
