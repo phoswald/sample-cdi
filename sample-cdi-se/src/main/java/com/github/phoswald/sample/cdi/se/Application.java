@@ -1,10 +1,12 @@
 package com.github.phoswald.sample.cdi.se;
 
+import jakarta.enterprise.context.Dependent;
 import jakarta.enterprise.inject.spi.CDI;
 import jakarta.inject.Inject;
 
 import org.jboss.weld.environment.se.Weld;
 
+@Dependent
 public class Application {
 
     @Inject
