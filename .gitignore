@@ -1,5 +1,9 @@
 target/
+/databases
 
 .project
 .classpath
+.factorypath
 .settings/
+
+.vscode/
